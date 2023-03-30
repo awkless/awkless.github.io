@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2023 Jason Pena <jasonpena@awkless.com>
+# SPDX-License-Identifier: MIT
+
+title: Awkless' Website
+
+author:
+  name: Github User
+  email: jasonpena@awkless.com
+
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
