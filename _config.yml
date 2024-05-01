@@ -3,9 +3,9 @@
 
 # Page settings...
 title: Main Page
-description: Starting point of my little website
+description: Entry point to my little website
 
 # Theme settings...
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/midnight@v0.2.0
 plugins:
   - jekyll-remote-theme
