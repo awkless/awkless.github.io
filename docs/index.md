@@ -28,14 +28,15 @@ commit or tag is compromised, then send me an email at <jasonpena@awkless.com>
 with proper evidence. Do not submit a bug request to any of my projects
 regarding security concerns.
 
-## [Rice Configurations][rice-configs]
+## Software Projects
 
-I house my public rice configurations in a seperate organization called
-[rice-configs][rice-configs]. Feel free to look around! Everything stored here
-is open to the public, and can be utilized for personal use. However, I _highly_
-recommend that you look through the code of any configuration you plan on using
-or copying. Whatever works for me, may not work for you!
+[OCD][project-ocd]
+
+March 2025 - Present
+
+A dotfile management tool that allows the user to distribute their
+configurations through a cluster of repositories.
 
 [pub-gpg-key]: https://keys.openpgp.org/search?q=jasonpena%40awkless.com
 [usage-guide]: https://keys.openpgp.org/about/usage
-[rice-configs]: https://rice.awkless.com
+[project-ocd]: https://github.com/awkless/ocd
