@@ -37,6 +37,19 @@ March 2025 - Present
 A dotfile management tool that allows the user to distribute their
 configurations through a cluster of repositories.
 
+## Blog Posts
+
+{% for post in site.posts %}
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <small>
+    <strong>
+      {{ post.date | date: "%B %e, %Y" }}
+    </strong>
+    [{{ post.category }}]
+    <a href="http://myname.github.com{{ post.url }}#disqus_thread"></a>
+  </small>
+{% endfor %}
+
 [pub-gpg-key]: https://keys.openpgp.org/search?q=jasonpena%40awkless.com
 [usage-guide]: https://keys.openpgp.org/about/usage
 [project-ocd]: https://github.com/awkless/ocd
