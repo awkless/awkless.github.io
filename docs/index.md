@@ -21,7 +21,9 @@ OpenPGP software product you like to use!
 Be sure to verify that the copy of my public key you get matches this
 fingerprint (spaces added for readability):
 
-> 8A14 E0DF A45D F309 72BA  BA29 A39C 4170 CBB2 3146
+```
+8A14 E0DF A45D F309 72BA  BA29 A39C 4170 CBB2 3146
+```
 
 If your copy does not match the fingerprint above, or Git tells you that some
 commit or tag is compromised, then send me an email at <jasonpena@awkless.com>
@@ -30,6 +32,29 @@ regarding security concerns.
 
 ## Software Projects
 
+<ul>
+{% for repo in site.github.public_repositories %}
+{% if repo.stargazers_count > 1 %}
+<li>
+<a href="{{ repo.html_url }}">{{ repo.name }}</a><br/>
+<i>{{ repo.description }}</i><br/>
+<b>Topics</b>: {{ repo.topics | array_to_sentence_string }}<br/>
+<b>Last updated</b>: {{ repo.updated_at | date_to_string }}<br/>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+## Blog Posts
+
+<ul>
+{% for post in site.posts %}
+<li>
+<a href="{{ post.url }}">{{ post.title }}</a><br/>
+<small><strong>{{ post.date | date: "%B %e %Y" }}</strong></small>
+</li>
+{% endfor %}
+</ul>
 
 [pub-gpg-key]: https://keys.openpgp.org/search?q=jasonpena%40awkless.com
 [usage-guide]: https://keys.openpgp.org/about/usage
